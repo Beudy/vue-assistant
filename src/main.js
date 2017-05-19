@@ -10,17 +10,16 @@ var VueMaterial = require('vue-material')
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
   default: {
-    primary: 'blue',
+    primary: {
+      color: 'blue',
+      hue: 700
+    },
     accent: 'red'
   },
-  green: {
-    primary: 'green',
+  teal: {
+    primary: 'blue',
     accent: 'pink'
-  },
-  orange: {
-    primary: 'orange',
-    accent: 'green'
-  },
+  }
 })
 
 Vue.config.productionTip = false
